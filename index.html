@@ -2,20 +2,42 @@
 :root{color-scheme:dark;--bg:#111512;--fg:#eceee6;--muted:#a7afa3;--gold:#dcba79}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 Arial,sans-serif}button{font:inherit;cursor:pointer}button:focus-visible,canvas:focus-visible{outline:2px solid var(--gold);outline-offset:5px}button:disabled{cursor:wait;opacity:.6}.shell{max-width:1700px;margin:auto;padding:0 5vw;overflow:hidden}.header{height:76px;border-bottom:1px solid #333c33;display:flex;align-items:center;justify-content:space-between}.brand{font-size:15px;letter-spacing:.24em;font-weight:700}.brand b{display:inline-block;width:13px;height:13px;border:2px solid var(--gold);transform:rotate(45deg);margin-right:15px}.tag{font:12px monospace;letter-spacing:.13em;color:var(--muted)}.hero{min-height:calc(100svh - 168px);display:grid;grid-template-columns:.85fr 1.15fr;position:relative}.copy{padding:64px 0 64px;align-self:center;z-index:2;pointer-events:none}.copy button{pointer-events:auto}.eyebrow{color:var(--gold);font:12px monospace;letter-spacing:.16em;margin:0 0 28px}h1{font-size:clamp(56px,6.4vw,96px);font-weight:400;line-height:1.02;letter-spacing:-.065em;margin:0 0 28px}h1 span{color:#9fa99b}.lead{max-width:340px;color:#b6beb0;font-size:16px;line-height:1.7;margin:0 0 32px}.actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.primary{border:1px solid var(--gold);background:var(--gold);color:#151b14;padding:15px 24px;font-weight:700;min-height:54px}.primary:hover{background:#ebcc97}.secondary{background:transparent;border:1px solid #555f50;color:var(--fg);padding:15px 21px;min-height:54px}.secondary:hover{border-color:var(--gold)}.view{position:relative;min-height:590px;touch-action:pan-y}.view canvas{display:block;width:100%;height:100%;position:absolute;inset:0;cursor:grab;touch-action:none}.view canvas:active{cursor:grabbing}.view-note{position:absolute;bottom:24px;left:0;right:0;text-align:center;font:12px monospace;color:var(--muted);pointer-events:none;letter-spacing:.07em}.view-top{position:absolute;top:24px;right:0;color:#9da896;font:10px monospace;letter-spacing:.12em;pointer-events:none}.view-top span{color:var(--gold)}.footer{min-height:92px;border-top:1px solid #333c33;display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:12px;color:var(--muted)}.footer p{margin:0;max-width:340px}.footer .tools{display:flex;gap:16px;flex-wrap:wrap}.text-btn{min-height:44px;background:none;border:0;padding:0 4px;color:#c0c8b9;font-size:12px}.text-btn:hover{color:var(--gold)}.status{position:fixed;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}#dust{position:fixed;inset:0;pointer-events:none;z-index:10;width:100%;height:100%}.after{display:none}.disappeared .before{display:none}.disappeared .after{display:block}.disappeared .dustable{visibility:hidden}.disappeared .header,.disappeared .footer{border-color:transparent}.disappeared .view-note{visibility:visible}.after h2{font-weight:400;font-size:clamp(48px,5.4vw,78px);line-height:1.05;letter-spacing:-.055em;margin:0 0 28px}.after p{color:var(--muted);margin-bottom:28px}.notice{position:absolute;inset:20px;display:flex;align-items:center;justify-content:center;color:var(--muted);text-align:center;z-index:1}.notice[hidden]{display:none}.error{border:1px solid #ae784d;background:#241e15;padding:20px;max-width:400px}.flash{position:fixed;inset:0;background:#ffe4ad;opacity:0;pointer-events:none;z-index:12}.swatch{display:inline-block;height:5px;width:5px;background:var(--gold);vertical-align:middle;margin-right:8px}@media(max-width:760px){.shell{padding:0 22px}.header{height:66px}.tag{font-size:9px;letter-spacing:.06em}.brand{font-size:12px}.brand b{margin-right:9px}.hero{grid-template-columns:1fr;min-height:0}.copy{padding:34px 0 0}.eyebrow{font-size:10px;margin-bottom:18px}h1{font-size:57px;margin-bottom:20px}.lead{font-size:14px;line-height:1.6;margin-bottom:24px}.primary,.secondary{font-size:13px;padding:12px 18px;min-height:48px}.view{height:405px;min-height:405px;margin:5px -12px 0}.view-top{top:18px;right:12px;font-size:9px}.view-note{bottom:8px;font-size:10px}.footer{padding:18px 0;gap:14px;flex-wrap:wrap;font-size:11px}.footer .tools{gap:12px}.text-btn{font-size:11px}.after h2{font-size:54px}.after p{font-size:14px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 body{background:#02040b}.shell{position:relative;z-index:2}#space{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}.lead{color:#c5cddd}.header,.footer{border-color:#ffffff24}h1 span{color:#96acbf}.after{display:none!important}.atomizing .shell{visibility:hidden;pointer-events:none}.atomizing #space{visibility:hidden}.atomizing .shell{z-index:11}.atomizing .view,.atomizing .view canvas{visibility:visible;pointer-events:auto}.atomizing .view>*:not(canvas){visibility:hidden}#restore-universe{position:fixed;z-index:15;bottom:9vh;left:50%;transform:translateX(-50%);display:none;text-align:center}@media(min-width:761px){#restore-universe{left:5vw;width:min(38vw,480px);transform:none;bottom:11vh}}.void #restore-universe{display:block}#restore{border-radius:40px;background:#0b1527dd;border:1px solid #7c99ba;color:#e0edff;font-weight:400;box-shadow:0 0 40px #7bafed18;font-size:14px;padding:16px 25px}.flash{background:#f4f9ff;z-index:12}#dust{z-index:10}@media(max-width:760px){#restore-universe{bottom:20px}} .finger-controls{position:absolute;top:32%;left:4px;z-index:3;display:flex;flex-direction:column;gap:7px;pointer-events:auto}.finger-controls button{min-height:36px;min-width:100px;padding:6px 10px;background:#08111fbe;border:1px solid #819ab343;color:#c4d0df;font:11px Arial,sans-serif;border-radius:5px;text-align:left;transition:background .2s,border-color .2s}.finger-controls button[aria-pressed=true]{background:#332e21e8;border-color:#dcba79;color:#f3d79e}.finger-controls button:disabled{opacity:.45;cursor:wait}.finger-controls small{font:9px monospace;letter-spacing:.12em;color:#9caec2;margin-bottom:3px}@media(max-width:760px){.finger-controls{top:85px;left:2px;gap:6px}.finger-controls button{min-width:95px;min-height:42px;font-size:10px;padding:6px 8px}.view-note{font-size:9px;letter-spacing:0}} .zoom-tools{position:absolute;top:55px;right:0;z-index:4;display:flex;gap:6px;align-items:center;pointer-events:auto}.zoom-tools button{width:36px;min-height:36px;border:1px solid #8293aa66;border-radius:5px;background:#091221c9;color:#dfebfb;font:18px Arial;cursor:pointer}.zoom-tools button:last-of-type{font-size:12px}.zoom-tools output{font:11px monospace;color:#b7c8dd;min-width:38px;text-align:center}.void .view .zoom-tools{visibility:visible!important;pointer-events:auto}@media(max-width:760px){.zoom-tools{right:12px;top:46px}.view-note{white-space:normal;padding:0 8px;line-height:1.4}} .shell{overflow:visible}.inspect{overflow:hidden}.inspect .view{position:fixed;inset:0;min-height:0;height:100dvh;width:100vw;margin:0;z-index:30;background:radial-gradient(ellipse at 50% 38%,#142030,#02040b 72%)}.inspect .view-top{top:24px;left:22px;right:auto}.inspect .zoom-tools{top:20px;right:20px}.inspect .finger-controls{top:auto;bottom:86px;left:50%;transform:translateX(-50%);flex-direction:row;gap:6px}.inspect .finger-controls small{display:none}.inspect .finger-controls button{min-width:95px;min-height:38px;text-align:center}.inspect .view-note{bottom:12px;font-size:10px}.inspect #snap{position:fixed;right:22px;bottom:24px;z-index:33;visibility:visible}.inspect .copy{z-index:31;visibility:hidden}.atomizing.inspect #snap{display:none}.inspect .actions{pointer-events:none}.inspect #restore-universe{z-index:35;bottom:24px}.inspect .view canvas{outline:none}@media(max-width:760px){.inspect .finger-controls button{min-width:0;width:65px;padding:5px 2px;font-size:9px}.inspect .finger-controls{gap:4px}.inspect #snap{right:50%;transform:translateX(50%);bottom:27px}.inspect .view-note{font-size:8px}.inspect .view-top{font-size:8px;top:30px;left:12px}.inspect .zoom-tools{right:12px}.inspect .finger-controls{bottom:88px}} .inspect .view{background:transparent}.inspect .copy{visibility:visible;z-index:31;pointer-events:auto}.inspect .header,.inspect .footer{position:relative;z-index:31}.inspect .actions{pointer-events:auto}.inspect #snap{position:static;transform:none;visibility:visible}.inspect .view-top{right:18px;left:auto;top:90px}.inspect .zoom-tools{top:110px;right:18px}.inspect .finger-controls{left:72%;bottom:115px}.inspect .view-note{left:45%;right:14px;bottom:98px}.inspect .view{pointer-events:none}.inspect .view canvas,.inspect .view button{pointer-events:auto}.inspect .footer{pointer-events:auto}.atomizing #space{visibility:visible}.rebuilding #space{visibility:hidden}.atomizing .copy,.atomizing .header,.atomizing .footer{visibility:hidden}#cataclysm{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:13}#doom-glow{position:fixed;inset:0;background:radial-gradient(ellipse at 70% 40%,#fff7da00 15%,#ff6a003d 55%,#d10000aa 100%);opacity:0;pointer-events:none;z-index:12}#shockwave{position:fixed;left:69%;top:41%;width:12vw;height:12vw;border:2px solid #ffefcb;border-radius:50%;box-shadow:0 0 18px 8px #ffbb4c88,inset 0 0 18px 6px #ffbb4c66;opacity:0;pointer-events:none;z-index:13}@media(max-width:760px){.inspect .header{position:fixed;left:22px;right:22px;top:0;height:66px;z-index:32}.inspect .copy{position:fixed;top:82px;left:20px;right:20px;width:auto;max-height:230px;overflow:auto;padding:0 0 8px;align-self:auto;scrollbar-width:thin;background:linear-gradient(90deg,#02040bb3,#02040b00);border-radius:8px}.inspect .eyebrow{font-size:8px;margin-bottom:6px}.inspect h1{font-size:32px;line-height:1.05;margin-bottom:8px;letter-spacing:-.045em}.inspect h1 br{display:none}.inspect h1 span:before{content:' '}.inspect .lead{font-size:11px;line-height:1.45;margin-bottom:9px;max-width:100%}.inspect .primary,.inspect .secondary{min-height:34px;padding:7px 12px;font-size:11px}.inspect .actions{gap:8px}.inspect .footer{position:fixed;bottom:0;left:18px;right:18px;padding:5px 0;min-height:87px;max-height:112px;font-size:8px;gap:1px;background:#02040b99;z-index:32}.inspect .footer p{font-size:8px;line-height:1.3;max-width:100%}.inspect .footer .tools{gap:12px}.inspect .text-btn{min-height:28px;font-size:9px}.inspect .view-top{top:68px;font-size:7px}.inspect .zoom-tools{top:335px;right:7px;flex-direction:column;gap:5px}.inspect .zoom-tools button{width:30px;min-height:30px}.inspect .zoom-tools output{font-size:9px;min-width:32px}.inspect .finger-controls{bottom:120px;left:50%;gap:4px}.inspect .finger-controls button{width:65px;min-height:36px}.inspect .view-note{left:12px;right:12px;bottom:102px;font-size:8px}.inspect #snap{position:static;transform:none}.inspect #restore-universe{bottom:24px}.void.inspect .copy,.void.inspect .header,.void.inspect .footer{visibility:hidden}}
 
-/* ===== ritual: что тебя бесит ===== */
-.ritual{display:grid;max-width:min(440px,calc(100% - 28px));min-height:calc(1.35em*2 + 22px);margin:0 0 30px;font-size:22px;pointer-events:auto}
-.ritual>*{grid-area:1/1}
-.vent{transition:opacity .45s ease,visibility .45s;align-self:start}
-.vent.is-hidden{opacity:0;visibility:hidden}
-#vent-input{width:100%;background:transparent;border:0;border-bottom:1px solid #dcba7966;color:var(--gold);font:inherit;line-height:1.35;padding:10px 0;border-radius:0;outline:none;caret-color:var(--gold)}
-#vent-input::placeholder{color:#8794a8;opacity:1}
-#vent-input:focus{border-bottom-color:var(--gold)}
-.vent.nudge{animation:nudge .42s ease}
-@keyframes nudge{0%,100%{transform:translateX(0)}25%{transform:translateX(-7px)}60%{transform:translateX(6px)}}
-.pinned{margin:0;padding:10px 0;border-bottom:1px solid transparent;color:var(--gold);line-height:1.35;font-size:inherit;word-break:break-word;visibility:hidden;align-self:start}
-.pinned.on{visibility:visible}
-.vent-note{font:11px monospace;letter-spacing:.1em;color:#7d8aa0;margin:10px 0 0}
-.copy .text-btn{pointer-events:auto}
+/* ===== ritual v2: окно ввода + фиксация ===== */
+.vm{position:fixed;inset:0;z-index:50;display:grid;place-items:center;padding:18px;opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s;background:radial-gradient(ellipse at 50% 45%,#050912d9 0%,#02040bf2 70%);-webkit-backdrop-filter:blur(9px);backdrop-filter:blur(9px)}
+.vm.on{opacity:1;visibility:visible}
+.vm.locking{opacity:0;transition:opacity .6s ease .1s}
+.vm-card{position:relative;width:min(640px,100%);padding:38px 42px 30px;border-radius:20px;border:1px solid #dcba7966;background:linear-gradient(180deg,#111826f2,#090d15f7);box-shadow:0 0 0 1px #00000066,0 30px 90px #000c,0 0 80px #dcba7922;transform:translateY(22px) scale(.97);transition:transform .55s cubic-bezier(.2,.9,.25,1),opacity .35s ease}
+.vm.on .vm-card{transform:none}
+.vm.locking .vm-card{transform:scale(.94);opacity:0}
+.vm-card.shake{animation:vmShake .42s ease}
+@keyframes vmShake{0%,100%{transform:translateX(0)}25%{transform:translateX(-9px)}60%{transform:translateX(8px)}}
+.vm-x{position:absolute;right:14px;top:12px;width:38px;height:38px;border-radius:50%;border:0;background:transparent;color:#8fa0b8;font-size:26px;line-height:1;cursor:pointer}
+.vm-x:hover{color:#fff;background:#ffffff14}
+.vm-kick{margin:0 0 14px;font:12px monospace;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+.vm-card h2{margin:0 0 10px;font-size:clamp(34px,5.4vw,52px);line-height:1;letter-spacing:-.045em;font-weight:700;color:#f1efe4}
+.vm-sub{margin:0 0 26px;color:#9fb0c6;font-size:16px;line-height:1.5;max-width:46ch}
+.vm-field{position:relative;margin-bottom:26px}
+#vent-input{width:100%;background:#05080ecc;border:1px solid #dcba7955;border-radius:12px;color:var(--gold);font:inherit;font-size:clamp(22px,3.4vw,30px);line-height:1.2;padding:18px 18px;outline:none;caret-color:var(--gold);transition:border-color .2s,box-shadow .2s}
+#vent-input::placeholder{color:#59677c;opacity:1}
+#vent-input:focus{border-color:var(--gold);box-shadow:0 0 0 4px #dcba7922,0 0 40px #dcba7922}
+.vm-count{position:absolute;right:6px;bottom:-20px;font:11px monospace;letter-spacing:.1em;color:#66758a}
+.vm-actions{display:flex;gap:12px;flex-wrap:wrap}
+.vm-hint{margin:22px 0 0;font:11px monospace;letter-spacing:.14em;color:#66758a;text-transform:uppercase}
+.stamp{display:none;margin:4px 0 30px;max-width:440px;color:var(--gold);font-weight:700;line-height:1.08;letter-spacing:-.03em;word-break:break-word;font-size:44px}
+.stamp.on{display:block}
+.stamp .w{display:inline-block;white-space:nowrap}
+.stamp .ch{display:inline-block;opacity:0;transform:translateY(.55em) scale(1.8);filter:blur(10px)}
+.stamp.play .ch{animation:chIn .5s cubic-bezier(.2,.9,.25,1.15) forwards;animation-delay:calc(var(--i)*var(--step,30ms))}
+@keyframes chIn{55%{opacity:1;filter:blur(0)}100%{opacity:1;transform:none;filter:blur(0)}}
+.stamp.lit{animation:stampGlow 1.8s ease-in-out infinite}
+@keyframes stampGlow{0%,100%{text-shadow:0 0 18px #dcba7966,0 0 46px #dcba7933}50%{text-shadow:0 0 28px #ffe0a0cc,0 0 80px #dcba7988}}
+body.stamping .before .lead{display:none}
+#stamp-flash{position:fixed;inset:0;z-index:14;pointer-events:none;opacity:0;background:radial-gradient(ellipse at 26% 54%,#ffe9b8b3 0%,#dcba7933 38%,transparent 70%)}
+#stamp-flash.go{animation:sflash .8s ease-out}
+@keyframes sflash{0%{opacity:0}18%{opacity:1}100%{opacity:0}}
+body.vm-open{overflow:hidden}
+@media(max-width:760px){.vm-card{padding:30px 22px 24px}.vm-actions button{flex:1 1 140px}.stamp{max-width:100%}}
+@media(prefers-reduced-motion:reduce){.vm-card.shake,.stamp.lit{animation:none}.stamp .ch{opacity:1;transform:none;filter:none}.stamp.play .ch{animation:none}}
 #zen{position:fixed;z-index:13;left:5vw;top:0;bottom:0;width:min(38vw,480px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;text-align:center;opacity:0;visibility:hidden;transition:opacity .5s ease,visibility .5s;cursor:default}
 #zen.on{opacity:1;visibility:visible;transition:opacity 1.6s ease,visibility 1.6s}
 .zen-ring{width:128px;height:128px;border-radius:50%;border:1px solid #dcba79aa;box-shadow:0 0 50px #dcba7922,inset 0 0 40px #dcba7912;transform:scale(.55);opacity:.55}
@@ -30,7 +52,7 @@ body{background:#02040b}.shell{position:relative;z-index:2}#space{position:fixed
 .void.zen-done #restore-universe{opacity:1;pointer-events:auto}
 @media(max-width:760px){.ritual{font-size:18px;margin-bottom:22px}#zen{left:22px;right:22px;width:auto;top:6vh;bottom:auto;gap:16px}.zen-ring{width:88px;height:88px}.zen-line{min-height:2.7em}}
 @media(prefers-reduced-motion:reduce){#zen.on .zen-ring{animation:none;transform:scale(.8);opacity:.8}.vent.nudge{animation:none}}
-body.doom-off #cataclysm{display:none}</style></head><body><canvas id="space" aria-hidden="true"></canvas><canvas id="cataclysm" aria-hidden="true"></canvas><div id="doom-glow"></div><div id="shockwave"></div><div class="shell"><header class="header"><div class="brand dustable"><b aria-hidden="true"></b>SNAP LAB</div><div class="tag dustable">ВСЕЛЕННАЯ / ОБРАТИМА</div></header><main class="hero"><section class="copy"><div class="before"><p class="eyebrow dustable">ШЕСТЬ КАМНЕЙ. ОДИН ЩЕЛЧОК.</p><h1 class="dustable">Что тебя<br><span>бесит?</span></h1><p class="lead dustable">Напиши одной строкой. Перчатка уничтожит вселенную, а вместе с ней и это. Текст не покидает твой браузер.</p><div class="ritual" id="ritual"><div class="vent" id="vent"><input id="vent-input" type="text" maxlength="72" autocomplete="off" autocapitalize="sentences" spellcheck="false" enterkeyhint="go" placeholder="например, перфоратор в 8 утра" aria-label="Что тебя бесит"></div><p class="pinned" id="pinned"></p></div><div class="actions dustable"><button id="snap" class="primary" disabled>Щёлкнуть</button><button id="all-at-once" class="secondary" type="button">Просто всё</button></div></div><div class="after"><h2>Вселенная<br>на паузе.</h2><p>Перчатка осталась. Остальное можно вернуть.</p></div></section><section class="view" aria-label="Интерактивная 3D-перчатка"><div class="notice" id="loading">Подготавливаю 3D-сцену…</div><div class="view-top dustable"><span>WEBGL</span> / ЗЕМЛЯ / НА ОРБИТЕ</div><div class="finger-controls" aria-label="Независимое управление пальцами"><small>ПАЛЬЦЫ / 1–5</small><button type="button" data-finger="4" aria-pressed="false">1 · Большой</button><button type="button" data-finger="0" aria-pressed="false">2 · Указательный</button><button type="button" data-finger="1" aria-pressed="false">3 · Средний</button><button type="button" data-finger="2" aria-pressed="false">4 · Безымянный</button><button type="button" data-finger="3" aria-pressed="false">5 · Мизинец</button></div><div class="zoom-tools" role="group" aria-label="Масштаб и положение камеры"><button id="zoom-in" type="button" aria-label="Приблизить перчатку">+</button><button id="zoom-out" type="button" aria-label="Отдалить перчатку">−</button><button id="zoom-reset" type="button" aria-label="Сбросить масштаб и сдвиг">1×</button><output id="zoom-level">1.0×</output></div><div class="view-note">Палец — сгиб · Колесо / щипок — масштаб · 1× — вернуться</div></section></main><footer class="footer"><p class="dustable"><span class="swatch"></span>Вселенная исчезнет. Перчатка останется.<br>Текст живёт только в твоём браузере.</p><div class="tools"><button id="camera" class="text-btn">Сбросить ракурс</button><button id="export" class="text-btn" disabled>Скачать GLB</button><button id="sound" class="text-btn" aria-pressed="false">Звук: включить</button><button id="motion" class="text-btn" aria-pressed="false">Меньше движения</button></div><p class="dustable">Enter: щелчок<br>Esc: восстановить</p></footer></div><div id="zen" aria-live="polite"><div class="zen-ring" aria-hidden="true"></div><p class="zen-breath" id="zen-breath"></p><p class="zen-line" id="zen-line"></p></div><div id="restore-universe"><p class="restore-note">Вселенная вернётся. Это — нет.</p><button id="restore" class="primary">Вернуть вселенную</button></div><canvas id="dust" aria-hidden="true"></canvas><div class="flash"></div><p role="status" aria-live="polite" class="status" id="status"></p>
+body.doom-off #cataclysm{display:none}</style></head><body><canvas id="space" aria-hidden="true"></canvas><canvas id="cataclysm" aria-hidden="true"></canvas><div id="doom-glow"></div><div id="shockwave"></div><div class="shell"><header class="header"><div class="brand dustable"><b aria-hidden="true"></b>SNAP LAB</div><div class="tag dustable">ВСЕЛЕННАЯ / ОБРАТИМА</div></header><main class="hero"><section class="copy"><div class="before"><p class="eyebrow dustable">ШЕСТЬ КАМНЕЙ. ОДИН ЩЕЛЧОК.</p><h1 class="dustable">Что тебя<br><span>бесит?</span></h1><p class="lead dustable">Напиши одной строкой. Перчатка уничтожит вселенную, а вместе с ней и это. Текст не покидает твой браузер.</p><div class="stamp" id="pinned" aria-live="polite"></div><div class="actions dustable"><button id="snap" class="primary" disabled>Щёлкнуть</button><button id="all-at-once" class="secondary" type="button">Просто всё</button></div></div><div class="after"><h2>Вселенная<br>на паузе.</h2><p>Перчатка осталась. Остальное можно вернуть.</p></div></section><section class="view" aria-label="Интерактивная 3D-перчатка"><div class="notice" id="loading">Подготавливаю 3D-сцену…</div><div class="view-top dustable"><span>WEBGL</span> / ЗЕМЛЯ / НА ОРБИТЕ</div><div class="finger-controls" aria-label="Независимое управление пальцами"><small>ПАЛЬЦЫ / 1–5</small><button type="button" data-finger="4" aria-pressed="false">1 · Большой</button><button type="button" data-finger="0" aria-pressed="false">2 · Указательный</button><button type="button" data-finger="1" aria-pressed="false">3 · Средний</button><button type="button" data-finger="2" aria-pressed="false">4 · Безымянный</button><button type="button" data-finger="3" aria-pressed="false">5 · Мизинец</button></div><div class="zoom-tools" role="group" aria-label="Масштаб и положение камеры"><button id="zoom-in" type="button" aria-label="Приблизить перчатку">+</button><button id="zoom-out" type="button" aria-label="Отдалить перчатку">−</button><button id="zoom-reset" type="button" aria-label="Сбросить масштаб и сдвиг">1×</button><output id="zoom-level">1.0×</output></div><div class="view-note">Палец — сгиб · Колесо / щипок — масштаб · 1× — вернуться</div></section></main><footer class="footer"><p class="dustable"><span class="swatch"></span>Вселенная исчезнет. Перчатка останется.<br>Текст живёт только в твоём браузере.</p><div class="tools"><button id="camera" class="text-btn">Сбросить ракурс</button><button id="export" class="text-btn" disabled>Скачать GLB</button><button id="sound" class="text-btn" aria-pressed="false">Звук: включить</button><button id="motion" class="text-btn" aria-pressed="false">Меньше движения</button></div><p class="dustable">Enter: щелчок<br>Esc: восстановить</p></footer></div><div id="stamp-flash"></div><div class="vm" id="vent-modal" role="dialog" aria-modal="true" aria-labelledby="vm-title" aria-hidden="true"><div class="vm-card"><button class="vm-x" type="button" aria-label="Закрыть">×</button><p class="vm-kick">Ритуал отпускания</p><h2 id="vm-title">Что тебя бесит?</h2><p class="vm-sub">Одной строкой. Перчатка уничтожит вселенную, а вместе с ней и это. Текст остаётся только в твоём браузере.</p><div class="vm-field"><input id="vent-input" type="text" maxlength="72" autocomplete="off" autocapitalize="sentences" spellcheck="false" enterkeyhint="go" placeholder="например, перфоратор в 8 утра" aria-label="Что тебя бесит"><span class="vm-count" id="vm-count">0 / 72</span></div><div class="vm-actions"><button id="vm-go" class="primary" type="button" disabled>Утвердить</button><button id="vm-all" class="secondary" type="button">Просто всё</button></div><p class="vm-hint">Enter — утвердить · Esc — закрыть</p></div></div><div id="zen" aria-live="polite"><div class="zen-ring" aria-hidden="true"></div><p class="zen-breath" id="zen-breath"></p><p class="zen-line" id="zen-line"></p></div><div id="restore-universe"><p class="restore-note">Вселенная вернётся. Это — нет.</p><button id="restore" class="primary">Вернуть вселенную</button></div><canvas id="dust" aria-hidden="true"></canvas><div class="flash"></div><p role="status" aria-live="polite" class="status" id="status"></p>
 <script>window.__glbReady=fetch("gauntlet.glb").then(function(r){if(!r.ok)throw new Error("HTTP "+r.status);return r.arrayBuffer()});window.__glbReady.catch(function(){});</script><script>console.warn('Scripts "build/three.js" and "build/three.min.js" are deprecated with r150+, and will be removed with r160. Please use ES Modules or alternatives: https://threejs.org/docs/index.html#manual/en/introduction/Installation'),
 /**
  * @license
@@ -275,12 +297,12 @@ function prepareAtomSets(activate){
  if(atomSets){disposeAtomSet(atomSets.B);atomSets=null}
  const pinned=document.getElementById('pinned');
  if(!pinned||!pinned.classList.contains('on')){prepareAtoms(activate);return}
- pinned.style.visibility='hidden';
+ document.body.classList.remove('stamping');pinned.classList.remove('on');
  prepareAtoms(false);
  const B={atomMesh,plate,atoms};
  if(!activate){renderAtoms(1);fxRenderer.clear()}
  fxScene.remove(B.atomMesh);fxScene.remove(B.plate);atomMesh=null;plate=null;
- pinned.style.visibility='';
+ document.body.classList.add('stamping');pinned.classList.add('on');
  prepareAtoms(activate);
  atomSets={A:{atomMesh,plate,atoms},B};
 }
@@ -293,7 +315,7 @@ function swapAtomSet(){
  disposeAtomSet(A);atomSets=null;
 }
 let dustLayout=null;function prepareDustCache(){prepareAtomSets(false);renderAtoms(0);renderAtoms(1);currentProgress=0;fxRenderer.clear();dustPrepared=true;dustLayout=[innerWidth,innerHeight,scrollX,scrollY];}
-let dustPrepared=false,actualSnapAudioTime=null;let snapFired=false;function beginSnap(){if(state!=='ready')return;renderedCanonicalTime=-1;if(!quoteActive)beginEpisode();clockAtSnap=cosmicClock;snapFired=false;clearContact();setDamage(0);inspection=null;inspectionView=false;storedView={x:rotationX,y:rotationY,z:zoom,fx:focusX,fy:focusY};state='running';hasBurst=hasGone=false;snap.disabled=ex.disabled=true;$('#status').textContent='Щелчок. Вселенная рассыпается.';t0=performance.now();timeline=0;syncFingerButtons();}
+let chargeOn=false;function chargeSway(L,now){chargeOn=true;const e=Math.sin(Math.PI*L);holder.rotation.y+=-.32*e;holder.rotation.x+=.045*e;holder.scale.setScalar(1+.04*e);holder.updateMatrixWorld(true);}function chargeGlow(L,now){const pulse=.5+.5*Math.sin(now/(150-80*L));gemMats.forEach(m=>m.emissiveIntensity=.14+L*L*(1.0+.9*pulse));}window.__prepDust=function(){dustPrepared=false;prepareDustCache();window.__dustFresh=true};let dustPrepared=false,actualSnapAudioTime=null;let snapFired=false;function beginSnap(){if(state!=='ready')return;renderedCanonicalTime=-1;if(!quoteActive)beginEpisode();clockAtSnap=cosmicClock;snapFired=false;clearContact();setDamage(0);inspection=null;inspectionView=false;storedView={x:rotationX,y:rotationY,z:zoom,fx:focusX,fy:focusY};state='running';hasBurst=hasGone=false;snap.disabled=ex.disabled=true;$('#status').textContent='Щелчок. Вселенная рассыпается.';t0=performance.now();timeline=0;syncFingerButtons();}
 function finish(){state='gone';swapAtomSet();document.body.classList.add('void');window.__ritualVoid&&window.__ritualVoid();$('#restore').disabled=false;$('#restore').focus({preventScroll:true});$('#status').textContent='Вселенная рассыпалась. Повреждённая перчатка осталась; камни потускнели.';}
 function reset(){if(state==='ready'||state==='restoring'||state==='rewinding')return;stopEpisode();if(!hasBurst){cancelNarrative(.18);completeReset();return}clearDoom();playRestorationAudio();document.body.classList.add('rebuilding');state='restoring';$('.flash').style.opacity=0;reverseStart=performance.now();reverseFrom=currentProgress;document.body.classList.remove('void');window.__ritualLeaveVoid&&window.__ritualLeaveVoid();$('#restore').disabled=true;$('#status').textContent='Обратный ход: пыль собирается во вселенную.';}
 function completeReset(){window.__ritualReset&&window.__ritualReset();returnCamera=null;leaveInspection();state='ready';stopEpisode();if(!narrativeBusy())setAmbience(true,.8);clearDoom();audioUI();clearManual();cosmicClock=clockAtSnap;updateCosmos(cosmicClock);setDamage(0);clearContact();inspection=null;hasBurst=hasGone=false;document.body.classList.remove('atomizing','void','rebuilding');$('.flash').style.opacity=0;fxRenderer.clear();spaceCanvas.style.opacity=1;particles.visible=false;blastLight.intensity=0;gemMats.forEach(m=>m.emissiveIntensity=.14);poseAt(0);if(storedView){rotationX=storedView.x;rotationY=storedView.y;zoom=storedView.z;holder.rotation.set(rotationX,rotationY,-.05);focusX=storedView.fx??0;focusY=storedView.fy??.35;cameraFocus.set(focusX,focusY,0);camera.position.set(focusX,focusY+.2,zoom);camera.lookAt(cameraFocus);updateZoomLabel();}snap.disabled=ex.disabled=false;$('#restore').disabled=false;renderGauntlet();paintSpace();$('#status').textContent='Вселенная восстановлена в исходное положение.';snap.focus({preventScroll:true});}
@@ -317,16 +339,16 @@ for(let button of document.querySelectorAll('[data-finger]'))button.onclick=()=>
 const fingerRay=new THREE.Raycaster(),fingerNdc=new THREE.Vector2();
 function fingerAtClient(x,y){if(state!=='ready')return -1;const r=renderer.domElement.getBoundingClientRect();fingerNdc.set((x-r.left)/r.width*2-1,-(y-r.top)/r.height*2+1);holder.updateMatrixWorld(true);mesh.skeleton.update();fingerRay.setFromCamera(fingerNdc,camera);const hit=fingerRay.intersectObject(mesh,false)[0];if(!hit||!hit.face)return -1;let weight=[0,0,0,0,0];for(let vi of [hit.face.a,hit.face.b,hit.face.c]){for(let k=0;k<4;k++){let bone=geo.attributes.skinIndex.array[vi*4+k],w=geo.attributes.skinWeight.array[vi*4+k];let f=digitBoneIds.findIndex(ids=>ids.includes(bone));if(f>=0)weight[f]+=w/3;}}let max=Math.max(...weight);return max>.28?weight.indexOf(max):-1;}
 function handleFingerTap(x,y){let f=fingerAtClient(x,y);if(f>=0)toggleFinger(f);}
-function start(){if(state!=='ready'||returnCamera)return;if(window.__ritualGate&&window.__ritualGate()===false)return;actualSnapAudioTime=null;let now=performance.now();updateManual(now);state='opening';let duration=reduced?350:1000;for(let f=0;f<5;f++)tweenFinger(f,0,now,Math.min(duration,650));beginCameraReturn(now,duration);openingUntil=now+duration;snap.disabled=ex.disabled=true;syncFingerButtons();$('#status').textContent='Плавный возврат к 1× и раскрытие пальцев перед щелчком.';}
+function start(){if(state!=='ready'||returnCamera)return;if(window.__ritualGate&&window.__ritualGate()===false)return;actualSnapAudioTime=null;let now=performance.now();updateManual(now);state='opening';let duration=reduced?350:620;for(let f=0;f<5;f++)tweenFinger(f,0,now,Math.min(duration,650));beginCameraReturn(now,duration);openingUntil=now+duration;snap.disabled=ex.disabled=true;syncFingerButtons();$('#status').textContent='Плавный возврат к 1× и раскрытие пальцев перед щелчком.';}
 addEventListener('keydown',e=>{if(e.repeat||e.ctrlKey||e.metaKey||e.altKey||/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName))return;if(/^[1-5]$/.test(e.key)&&state==='ready'){e.preventDefault();toggleFinger([4,0,1,2,3][+e.key-1]);}});
 syncFingerButtons();
 
 let timeline=0;let previousFrame=performance.now();function poseSurvivor(t){poseAt(Math.min(t,1.65));let turn=reduced?0:-1.05*Math.sin(Math.PI*Math.min(t/2.7,1));holder.rotation.set(rotationX,rotationY+turn,-.05);holder.updateMatrixWorld(true);}
 function animate(rafTime){const now=performance.now();requestAnimationFrame(animate);if(destroyed)return;let dt=Math.max(0,Math.min(.075,(now-previousFrame)/1000));previousFrame=now;updateCameraFrame(now,dt);
-if(state==='opening'){cosmicClock+=dt;updateCosmos(cosmicClock);paintSpace();updateManual(now);renderGauntlet();if(now>=openingUntil&&!returnCamera){clearManual();renderGauntlet();state='ready';dustPrepared=false;prepareDustCache();beginEpisode();beginSnap();}return}
+if(state==='opening'){cosmicClock+=dt;updateCosmos(cosmicClock);paintSpace();updateManual(now);renderGauntlet();if(now>=openingUntil&&!returnCamera){clearManual();renderGauntlet();state='ready';if(window.__dustFresh){window.__dustFresh=false;dustPrepared=true}else{dustPrepared=false;prepareDustCache()}beginEpisode();beginSnap();}return}
 if(state==='ready'){updateManual(now);cosmicClock+=dt;updateCosmos(cosmicClock);if(now-spaceFrame>33){paintSpace();spaceFrame=now;}let b=1-Math.exp(-dt*12);holder.rotation.y+=(rotationY-holder.rotation.y)*b;holder.rotation.x+=(rotationX-holder.rotation.x)*b;if(frameDirty||Math.abs(rotationY-holder.rotation.y)>.0001||Math.abs(rotationX-holder.rotation.x)>.0001||Math.abs(zoom-camera.position.z)>.0001){renderGauntlet();frameDirty=false;}return}
-if(state==='running'){timeline=episodeElapsed();let t=inspection===null?Math.max(0,timeline-(quoteDuration-1)+1.10):inspection;if(t>=1.10&&!snapFired){snapFired=true;actualSnapAudioTime=episodeElapsed();poseSurvivor(t);spark();if(reduced)particles.visible=false;}let renderModel=(t>0&&t<3.1)||renderedCanonicalTime<0||(t>=3.1&&renderedCanonicalTime<3.1);if(renderModel)poseSurvivor(t);if(!hasBurst){cosmicClock+=dt;updateCosmos(cosmicClock);if(now-spaceFrame>50){paintSpace();spaceFrame=now;}}
-renderDoom(t-1.10);animateContact(t);setDamage(THREE.MathUtils.smoothstep(t,1.23,2.85),t<1.1?10:t-1.1);if(t>=1.23&&!hasBurst){hasBurst=true;if(!dustPrepared)prepareAtomSets(true);else document.body.classList.add('atomizing');}showFlash(Math.max(0,t-1.1));if(t<1.1) $('.flash').style.opacity=0;
+if(state==='running'){timeline=episodeElapsed();let t=inspection===null?Math.max(0,timeline-(quoteDuration-1)+1.10):inspection;if(t>=1.10&&!snapFired){snapFired=true;actualSnapAudioTime=episodeElapsed();poseSurvivor(t);spark();if(reduced)particles.visible=false;}let renderModel=(t>0&&t<3.1)||renderedCanonicalTime<0||(t>=3.1&&renderedCanonicalTime<3.1);let charging=inspection===null&&t<=0&&!reduced,chargeL=Math.min(1,Math.max(0,timeline)/Math.max(.5,quoteDuration-2.1));if(charging)renderModel=true;if(renderModel)poseSurvivor(t);if(charging){chargeSway(chargeL,now)}else if(chargeOn){chargeOn=false;holder.scale.setScalar(1);holder.updateMatrixWorld(true)}if(!hasBurst){cosmicClock+=dt;updateCosmos(cosmicClock);if(now-spaceFrame>50){paintSpace();spaceFrame=now;}}
+renderDoom(t-1.10);animateContact(t);setDamage(THREE.MathUtils.smoothstep(t,1.23,2.85),t<1.1?10:t-1.1);if(charging)chargeGlow(chargeL,now);if(t>=1.23&&!hasBurst){hasBurst=true;if(!dustPrepared)prepareAtomSets(true);else document.body.classList.add('atomizing');}showFlash(Math.max(0,t-1.1));if(t<1.1) $('.flash').style.opacity=0;
 if(hasBurst){renderAtoms(Math.max(0,t-1.23)/(reduced?1.7:4.4));}if(renderModel){renderGauntlet();renderedCanonicalTime=t;}if(hasBurst&&currentProgress>=1&&inspection===null){clearDoom();setDamage(1);clearContact();finish();renderGauntlet();}}
 else if(state==='gone'){let b=1-Math.exp(-dt*10);holder.rotation.y+=(rotationY-holder.rotation.y)*b;holder.rotation.x+=(rotationX-holder.rotation.x)*b;if(frameDirty||Math.abs(rotationY-holder.rotation.y)>.0001||Math.abs(rotationX-holder.rotation.x)>.0001||Math.abs(zoom-camera.position.z)>.0001){renderGauntlet();frameDirty=false;}}
 else if(state==='restoring'){clearContact();let elapsed=(now-reverseStart)/1000,duration=(reduced?1.7:4.4)*reverseFrom;let p=reverseFrom*(1-Math.min(1,elapsed/Math.max(.05,duration)));renderAtoms(p);let tt=1.23+p*(reduced?1.7:4.4);poseSurvivor(tt);setDamage(THREE.MathUtils.smoothstep(tt,1.23,2.85));renderGauntlet();if(p<=0){document.body.classList.remove('atomizing','rebuilding');fxRenderer.clear();poseSurvivor(1.23);state='rewinding';rewindStart=now;}}
@@ -337,35 +359,79 @@ window.demo={start,reset,home,exportGLB,toggleFinger,fingerAtClient,get fingerSt
 })();
 </script><script>(function(){
 var $=function(s){return document.querySelector(s)};
-var input=$('#vent-input'),vent=$('#vent'),pinned=$('#pinned'),snapBtn=$('#snap'),allBtn=$('#all-at-once'),
+var modal=$('#vent-modal'),card=modal.querySelector('.vm-card'),input=$('#vent-input'),go=$('#vm-go'),allBtn=$('#vm-all'),xBtn=modal.querySelector('.vm-x'),count=$('#vm-count'),
+    pinned=$('#pinned'),flash=$('#stamp-flash'),snapBtn=$('#snap'),allMain=$('#all-at-once'),
     zen=$('#zen'),breath=$('#zen-breath'),line=$('#zen-line'),status=$('#status');
-var consumed=false,timers=[],runs=0;
+var timers=[],busy=false,consumed=false,autoOpened=false,armed=false;
 var LINES=['Это было про вселенную или про вторник?','Пыль не спорит и никуда не торопится.','Одной мелочью меньше. Остальное разберём потом.','Вселенная в пыли, а ты дышишь. Масштаб восстановлен.'];
 function later(fn,ms){var t=setTimeout(fn,ms);timers.push(t);return t}
 function clearTimers(){timers.forEach(clearTimeout);timers=[]}
 function reduced(){var m=$('#motion');return matchMedia('(prefers-reduced-motion: reduce)').matches||(m&&m.getAttribute('aria-pressed')==='true')}
+function clean(v){return v.replace(/\s+/g,' ').trim()}
+function sync(){count.textContent=input.value.length+' / 72';go.disabled=!clean(input.value)||snapBtn.disabled}
 
-input.addEventListener('keydown',function(e){
-  if(e.key==='Enter'&&!e.isComposing){e.preventDefault();if(!snapBtn.disabled)snapBtn.click();}
-});
-allBtn.addEventListener('click',function(){input.value='всё сразу';if(!snapBtn.disabled)snapBtn.click();else input.focus()});
+function openModal(){
+  if(busy||modal.classList.contains('on'))return;
+  modal.classList.remove('locking');modal.classList.add('on');modal.setAttribute('aria-hidden','false');document.body.classList.add('vm-open');
+  sync();setTimeout(function(){try{input.focus({preventScroll:true})}catch(e){}},80);
+}
+function closeModal(){modal.classList.remove('on','locking');modal.setAttribute('aria-hidden','true');document.body.classList.remove('vm-open')}
 
-/* called at the top of start(): pin the text so the dust snapshot can see it */
+input.addEventListener('input',sync);
+input.addEventListener('keydown',function(e){if(e.key==='Enter'&&!e.isComposing){e.preventDefault();confirmText()}});
+go.addEventListener('click',confirmText);
+allBtn.addEventListener('click',function(){input.value='всё сразу';sync();confirmText()});
+allMain.addEventListener('click',function(){input.value='всё сразу';sync();if(!snapBtn.disabled)confirmText();else openModal()});
+xBtn.addEventListener('click',closeModal);
+modal.addEventListener('mousedown',function(e){if(e.target===modal)closeModal()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&modal.classList.contains('on')){e.preventDefault();e.stopImmediatePropagation();closeModal()}},true);
+/* first time the scene is ready: open the window by itself */
+new MutationObserver(function(){sync();if(!snapBtn.disabled&&!autoOpened&&!document.body.classList.contains('void')){autoOpened=true;setTimeout(openModal,450)}}).observe(snapBtn,{attributes:true,attributeFilter:['disabled']});
+
+function confirmText(){
+  var v=clean(input.value);
+  if(!v){card.classList.remove('shake');void card.offsetWidth;card.classList.add('shake');input.focus();return}
+  if(snapBtn.disabled||busy)return;
+  busy=true;input.blur();
+  try{window.demo&&window.demo.home&&window.demo.home()}catch(e){}
+  modal.classList.add('locking');
+  later(function(){closeModal();buildStamp(v)},reduced()?60:420);
+}
+function buildStamp(v){
+  var words=v.split(' '),n=0;pinned.textContent='';
+  words.forEach(function(w,wi){
+    if(wi)pinned.appendChild(document.createTextNode(' '));
+    var ws=document.createElement('span');ws.className='w';
+    Array.from(w).forEach(function(chr){var cs=document.createElement('span');cs.className='ch';cs.style.setProperty('--i',n++);cs.textContent=chr;ws.appendChild(cs)});
+    pinned.appendChild(ws);
+  });
+  var size=n<=16?58:n<=28?46:n<=44?38:32;pinned.style.fontSize=size+'px';
+  var step=Math.max(14,Math.min(38,950/n));pinned.style.setProperty('--step',step+'ms');
+  document.body.classList.add('stamping');pinned.classList.add('on');
+  if(status)status.textContent='Фиксирую: '+v;
+  if(reduced()){pinned.classList.add('play','lit');later(fire,600);return}
+  var reveal=n*step+520;
+  later(function(){pinned.classList.add('play')},90);
+  later(function(){pinned.classList.add('lit');flash.classList.remove('go');void flash.offsetWidth;flash.classList.add('go')},90+reveal);
+  later(fire,90+reveal+950);
+}
+function fire(){
+  try{window.__prepDust&&window.__prepDust()}catch(e){console.error(e)}
+  later(function(){busy=false;snapBtn.click()},90);
+}
+
+/* embers canvas stays hidden outside the destruction phase */
+new MutationObserver(function(){var c=document.body.classList;if(armed&&c.contains('atomizing')&&!c.contains('void')){armed=false;c.remove('doom-off')}}).observe(document.body,{attributes:true,attributeFilter:['class']});
+/* start(): without a fixed text the window opens instead of the snap */
 window.__ritualGate=function(){
-  var v=input.value.replace(/\s+/g,' ').trim();
-  if(!v){
-    vent.classList.remove('nudge');void vent.offsetWidth;vent.classList.add('nudge');
-    input.focus();if(status)status.textContent='Напиши хотя бы пару слов: вселенной нужен повод.';
-    return false;
-  }
-  pinned.textContent=v;pinned.classList.add('on');vent.classList.add('is-hidden');input.blur();armed=true;
-  return true;
+  if(pinned.classList.contains('on')&&pinned.textContent.trim()){armed=true;return true}
+  openModal();return false;
 };
 
-/* finish(): universe is dust, the text went with it */
+/* finish(): the universe is dust, the text went with it */
 window.__ritualVoid=function(){
-  consumed=true;runs++;clearTimers();armed=false;document.body.classList.add('doom-off');
-  pinned.classList.remove('on');pinned.textContent='';
+  consumed=true;clearTimers();busy=false;armed=false;document.body.classList.add('doom-off');
+  pinned.classList.remove('on','play','lit');pinned.textContent='';document.body.classList.remove('stamping');
   var calm=reduced();zen.classList.toggle('calm',calm);
   line.classList.remove('on');line.textContent=LINES[Math.floor(Math.random()*LINES.length)];
   breath.style.opacity=1;breath.textContent='';
@@ -386,17 +452,13 @@ zen.addEventListener('click',function(){if(document.body.classList.contains('voi
 
 /* reset() started: leave the silence at once */
 window.__ritualLeaveVoid=function(){clearTimers();zen.classList.remove('on');line.classList.remove('on');document.body.classList.remove('zen-done')};
-/* completeReset(): back to the input screen */
+/* completeReset(): back to the first screen */
 window.__ritualReset=function(){
-  clearTimers();zen.classList.remove('on','calm');line.classList.remove('on');breath.textContent='';
-  document.body.classList.remove('zen-done');
-  pinned.classList.remove('on');pinned.textContent='';
-  if(consumed)input.value='';
-  consumed=false;
-  vent.classList.remove('is-hidden','nudge');
-  setTimeout(function(){try{input.focus({preventScroll:true})}catch(e){}},50);
+  clearTimers();busy=false;zen.classList.remove('on','calm');line.classList.remove('on');breath.textContent='';
+  document.body.classList.remove('zen-done','stamping');
+  pinned.classList.remove('on','play','lit');pinned.textContent='';
+  if(consumed)input.value='';consumed=false;sync();
 };
-var armed=false;new MutationObserver(function(){var c=document.body.classList;if(armed&&c.contains('atomizing')&&!c.contains('void')){armed=false;c.remove('doom-off')}}).observe(document.body,{attributes:true,attributeFilter:['class']});
 })();</script><script>(function(){var q=[].slice.call(document.querySelectorAll('script[data-after-glb]'));window.__glbReady.then(function(buf){window.__glbBuffer=buf;q.forEach(function(n){var el=document.createElement('script');el.textContent=n.textContent;document.body.appendChild(el)})}).catch(function(err){var l=document.getElementById('loading');if(l){l.innerHTML='<div class="error">Не удалось загрузить gauntlet.glb ('+(err&&err.message||err)+'). Положи файл рядом с HTML и открой страницу через сервер (GitHub Pages или python -m http.server): по file:// браузер блокирует загрузку.</div>'}console.error(err)})})();</script></body></html>
 
 <!--
